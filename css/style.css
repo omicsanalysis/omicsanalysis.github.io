@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    font-size: 10px; /*Initial font-size adjusted to 10px*/
+    letter-spacing: 0.1rem;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    padding: 0.5rem 2rem;
+    display: flex;
+    height: 6rem;
+}
+header *  {
+    height: 100%;
+}
+/*NAV STYLING*/
+nav ul{
+    padding: 0 10vw;
+    width: 100%;
+    display: flex;
+}
+nav a{
+    margin: 0 1rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+    text-align: center;
+    color: black;
+    font-size: 1.6rem;
+    height: auto;
+}
+nav a:hover{
+    font-weight: 500;
+}
+
+/*MAIN STYLING*/
+h1{
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+    color:#362f8e;
+    text-align: center;
+}
+h2{
+    margin: 2rem 0 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+#Analisis, #Consultoria, #Preguntas, #Contacto{
+    background:#eeeeee;
+    margin: 3rem 2rem;
+    padding: 4rem;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+/***PROMO SECTION*/
+#Main_Promo{
+    padding: 0 2rem;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background: linear-gradient(-45deg, #4f46c9, #362f8e);
+    background-size: 300%;
+
+}
+#Main_Promo:hover{
+    animation: gradient 1s ease forwards;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#Main_Promo p{
+    margin: 2rem 0;
+}
+#Main_Promo button{
+    all:inherit;
+    margin: 0 2rem;
+    padding: 0 2rem;
+    height: 4rem;
+    border:1px solid #ffffff;
+    border-radius: 1rem;
+}
+
+#Main_Promo button:hover{
+    color:#4f46c9;
+    background: white;
+}
+
+/***BANNER SECTION*/
+
+#Banner{
+   background-color: #362f8e;
+   height: 300px;
+}
