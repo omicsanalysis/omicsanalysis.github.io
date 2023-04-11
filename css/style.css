@@ -88,7 +88,7 @@ p {
 
 #Banner{
    background-color: #362f8e;
-   background-image:url("https://github.com/operacion-oan/website/blob/main/img/DNA4.jpg?raw=true");
+   background-image:url("../img/DNA4.jpg");
    background-size: cover;
    background-position: center;
    height: 30rem;
@@ -144,7 +144,7 @@ p {
     border-radius: 50%;
 }
 #Quienes{
-    background-image:url("img/squares_background.png");
+    background-image:url("../img/squares_background.png");
     background-size: cover;
 }
 #Quienes div{
