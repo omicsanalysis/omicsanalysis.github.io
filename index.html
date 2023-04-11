@@ -7,6 +7,7 @@
     <meta name="description" content="Análisis de datos de NGS para proyectos de Metagenómica y Transcriptómica">
     <meta name="author" content="OMICs Analysis">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,58 +15,142 @@
 <body>
     <header>
         <a class="logo" href="index.html">
-            <img class="logo" src="images/logo_OAN_for_white.png" alt="OMICs Analysis logo">
+            <img class="logo" src="img/logo_OAN_for_white.png" alt="OMICs Analysis logo">
         </a>
-        <nav>
-            <ul>
-                <a href="analisis.html"><li>Análisis</li></a>
-                <a href="consultoria.html"><li>Consultoría</li></a>
-                <a href="faqs.html"><li>Preguntas Frecuentes</li></a>
-                <a href="contact.html"><li>Contacto</li></a>
-            </ul>
+        
+            <input type="checkbox" name="" id="menu_check">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        
+        <nav class="navbar">
+            <ul class="menu-items">
+                <a href="#Analisis"><li>Análisis</li></a>
+                <a href="#Consultoria"><li>Consultoría</li></a>
+                <!-- <a href="faqs.html"><li>Preguntas Frecuentes</li></a> -->
+                <a href="#Quienes"><li>Quienes Somos</li></a>
+                <a href="#Contacto"><li>Contacto</li></a>
         </nav>
     </header>
     <main>
-        <section id="Main_Promo">
-            <p>ASESORÍA GRATIS PARA LA PLANEACIÓN DE EXPERIMENTOS DE NGS </p>
-            <button type="submit">Solicite su Consultoría</button>
+
+
+        <section class="Main_Promo">
+            <p id="p_consult_promo">ASESORÍA GRATIS PARA LA PLANEACIÓN DE EXPERIMENTOS DE NGS </p>
+            <a href="#Contacto"><div id="Agende">Agende una Cita</div></a>
         </section>
         <section id="Banner">
+            <div id="Banner_div"></div>
         </section>
+
+
         <section id="Analisis">
-            <h1>Análisis de Datos</h1>
-            <p>Para Datos de secuenciación masiva de ADN (Next Generation Sequencing 
-                -NGS-) generados con distintas tecnologías. 
-                Nos especializamos en datos de Metagenómica y Transcriptómica de diversos modelos biológicos.
-            <article class="Aplicacion">
-                <h2>Metagenómica</h2>
-                <p>Trabajamos con datos de comunidades bacterianas del
-                    intestino humano (y de otras especies), así como de otros nichos ecológicos.</p>
-                <p>Contamos con métodos para analizar lecturas del RNA ribosomal 16S o del ADN total de las comunidades 
-                    bacterianas.
-                    Analizamos la composición de las comunidades bacterianas e identificamos a los clados 
-                    cuya abundancia varía entre distintos grupos de muestras.</p>
-                    
-            </article>
-            <article class="Aplicacion">
-                <h2>Transcriptómica</h2>
-            </article>
+            <h1 id="h_analisis"></h1>
+            <p id="p_anali_1"></p>
+            <div id="Analisis_caract">
+                <div class="caract">
+                    <div><h3 id="h_caract_1"></h3></div>
+                    <img id="src_atencion" class="icon" src="img/atencion.png">
+                    <p id="p_caract_1"></p>
+                </div>
+                <div class="caract">
+                    <div><h3 id="h_caract_2"></h3></div>
+                    <img id="src_velocidad" class="icon" src="img/velocidad.png">
+                    <p id="p_caract_2"></p>
+                </div>
+                <div class="caract">
+                    <div><h3 id="h_caract_3"></h3></div>
+                    <img id="src_reportes" class="icon" src="img/reportes.png">
+                    <p id="p_caract_3"></p>
+                </div>
+            </div>
+            
+            <section id="Analisis_Aplicaciones">
+                <article class="Aplicacion">
+                    <h2 id="h_metag_1"></h2>
+                    <div class="horizontal_flex">
+                        <img src="img/metagenomica.png">
+                        <p id="p_metag_1"></p>
+                    </div>
+                </article>
+                <article class="Aplicacion">
+                    <h2 id="h_trans_1"></h2>
+                    <div class="horizontal_flex">
+                        <p id="p_trans_1"></p>
+                        <img src="img/transcriptomica.png">
+                    </div>
+                </article>
+            </section>
         </section>
+
+
         <section id="Consultoria">
-            <h1>Consultoría</h1>
-            <article class="Planeacion"></article>
-                <h2>Para la planeación de proyectos</h2>
-            <article class="En_Analisis"></article>
-                <h2>En sus servicios de análisis</h2>
+            <h1 id="h_consult"></h1>
+            <div class="horizontal_flex">
+                <img class="circle_image" src="img/Consultoria_1.jpg">
+                <div>
+                    <p id="p_consult_1"></p>
+                    <p id="p_consult_2"></p>
+                    <p id="p_consult_3"></p>
+                <div>
+            </div>
         </section>
-        <section id="Preguntas">
-            <h1>Preguntas Frecuentes</h1>
+
+
+        <!-- <section id="Preguntas">
+            <h1 id="h_preguntas"></h1>
+        </section> -->
+
+
+        <section id="Quienes">
+            <div>
+                <h1 id="h_quienes"></h1>
+                <p id="p_quienes_1"></p>
+                <p id="p_quienes_2"></p>
+            </div>
         </section>
+
+
+        <section class="Main_Promo">
+            <p>ASESORÍA GRATIS PARA LA PLANEACIÓN DE EXPERIMENTOS DE NGS   <b>¡CONTACTENOS!</b></p>
+        </section>
+
+
         <section id="Contacto">
-            <h1>Contacto</h1>
+            <h1 id="h_contacto"></h1>
+            <p id="p_contacto_1"></p>
+            <p id="p_contacto_2"></p>
+            <div id="Contacto_medios">
+                <div class="flex">
+                    <a href = "mailto: atencion@omicsanalysis.mx">
+                        <img class="icon" src="img/Mail.png">
+                    </a>
+                    <p>atencion@omicsanalysis.mx</p>
+                </div>
+                <div class="flex">
+                    <img class="icon" src="img/WhatsApp.png">
+                    <p>+52 5545043528</p>
+                </div>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/omicsanalysismx/">
+                    <img class="icon" src="img/FaceBook.png">
+                </a>
+                <a href="https://www.linkedin.com/company/omicsanalysis/">
+                    <img class="icon" src="img/LinkedIn.png">
+                </a>
+            </div>
         </section>
     </main>
+
+
     <footer>
+        <p>OMICs Analysis, CDMX 14400, 2023. Todos Los Derechos Reservados.</p>
     </footer>
+
+
+    <script src="js/Variables.js"></script> 
 </body>    
 </html>
