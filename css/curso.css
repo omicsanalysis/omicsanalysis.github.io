@@ -1,0 +1,259 @@
+
+*{
+    font-size:1.8rem;
+    letter-spacing: .2rem;
+    /*border:1px solid salmon;*/
+}
+h1{
+    font-size: 10rem; font-weight: 100;
+    color:white;
+    padding:0 2rem;
+}
+h2{
+    font-size: 4.5rem; font-weight: 700;
+    padding: 0rem 3rem;
+}
+h3{
+    font-size:3rem;
+    padding:1rem 3rem;
+}
+h1, h2, h3{ text-align: right}
+h2,h3{ background: linear-gradient(to right, transparent, rgb(145, 22, 147)); }
+h4{
+    font-size:3rem; font-weight: 200;
+    text-align: center;
+    margin:3rem 0;
+    color:blue;
+    
+}
+h5{
+    font-size:2.5rem; font-weight: 200;
+    text-align: left;
+    background-color: rgb(255, 179, 0);
+    padding:2rem 1rem;
+    border-radius: 0 0 2rem 0;
+
+}
+
+/***CONTENT SECTIONS*/
+.Main_Promo2{
+    display: flex;
+    padding: 0 2rem;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: linear-gradient(-45deg, #625ee2, #221d69);
+    background-size: 300vw;
+    animation: gradient 5s ease forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+.Main_Promo2 > p {
+    padding: 1.5rem;
+    font-size:2rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
+}
+#Opening{
+    background-color: #362f8e;
+    background-image:url("../img/DNA1.png");
+}
+#Present{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    background-size: cover;
+    background-position: center;
+    min-height: 35rem;
+    color:white;
+    background: linear-gradient(45deg, #100c77 0%, #2a46b9 40%,transparent 70%);
+
+}
+#Present div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Main_data{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin:0;
+    padding: 1rem;
+    background-color: rgba(255, 210, 112, 0.883);
+}
+#Main_data div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 3rem;
+}
+#Main_data > div > img{
+    height: 6rem;
+}
+#Main_data > div > p{
+    font-size:2rem;
+}
+#Advantages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:3rem 0;
+}
+#Advantages>div{
+    background-color: rgb(0, 85, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 6rem;
+    padding: 2rem;
+    border:2px solid white;
+    border-radius: 0.3rem;
+    transform: skewX(-15deg);
+    color:white;
+}
+#Advantages>div>p{
+    transform: skew(15deg); /* UNSKEW */
+    font-weight: 700;
+    font-size:2rem;
+}
+#Descrip p{
+    margin:5rem 4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color:#222222;
+}
+#Instruct{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding:5rem 4rem;
+    background: linear-gradient(20deg, #0c1e77 0%, transparent 15%,transparent 85%,#0c1e77 100%);
+
+}
+#Instruct div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0rem 2rem;
+}
+#Instruct div img{
+    width:23rem; height: 23rem;
+    align-self: flex-end;
+}
+#Inscripcion{
+    padding: 5rem 4rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1rem;
+}
+#Inscripcion > div {
+    border: 3px solid;
+    border-image: linear-gradient(135deg, transparent 50%,  blue) 1;
+}
+#Temario > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:0;padding:0;
+    font-size: 1.4rem;
+    align-items: start;
+}
+
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+    height: auto;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+}
+
+/* Aesthetic */
+
+.accordion {
+    padding: 0; margin: 0; width: 100%;
+}
+
+.accordion .accordion-item {
+  background-color: rgb(219, 219, 219);
+  border: 2px solid #ffffff;
+  padding: 0;
+  border-radius: 0 0 2rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+    #Present, #Instruct, #Descrip, #Inscripcion, #Temario>div, #Main_data>div{
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        padding:5rem 1rem;
+    }
+    .Main_Promo2 > p {
+        font-size:1.5rem;
+        padding: 1rem;
+    }
+    #Present{
+        background: linear-gradient(210deg, #100c77 0%, #2a46b9 20%,transparent 50%);
+    }
+    h1, h2, h3 { text-align: center;}
+    #Present h1{
+        font-size: 7rem;
+        margin:2rem; padding:0;
+    }
+    #Present h2{
+        font-size: 3rem;
+        margin:0; padding:1rem 0rem;
+    }
+    #Present h3{
+        font-size: 2rem;
+        margin:0; padding:2rem 0rem;
+    }
+    #Main_data >div{
+        margin:0; padding:0;
+    }
+    #Main_data div img{
+        height:4rem;
+    }
+    #Main_data div p{
+        font-size:1.8rem;
+        text-align:center;
+        margin:0 1rem;
+    }
+    #Descrip p{
+        margin:0; padding:0;
+        text-align: center;
+    }
+    #Instruct>div{
+        margin:0;
+    }
+    #Instruct div img{
+        align-self: center;
+    }
+    #Instruct div p{
+        font-size: 1.5rem;
+        font-weight: 300rem;
+        margin:0;
+    }
+    #Advantages div{
+        width: 40%;
+    }
+}
