@@ -105,6 +105,8 @@ p {
     text-align: justify;
 }
 #Consultoria, #Contacto{
+    padding:2rem;
+    display: flex;
     background:#eeeeee;
 }
 #Analisis_caract{
