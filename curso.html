@@ -99,10 +99,9 @@
         <section id="Temario">
         <h4>TEMARIO</h4>
         <div>
-            <div class="accordion">
-                <section class="accordion-item">
-                <h5>1. FUNDAMENTOS DEL NGS</h5>
-                <div class="accordion-item-content">
+            <div>              
+                <button class="accordion">1. FUNDAMENTOS DEL NGS</button>
+                <div class="panel">
                     <p>Importancia y  aplicaciones</p>
                     <p>Flujo de trabajo general</p>
                     <p>Extracción de ADN o ARN</p>
@@ -112,48 +111,43 @@
                     <p>Librerías en multiplex</p>
                     <p>Análisis de datos</p>
                 </div>
-                </section>
-                <section class="accordion-item">
-                <h5>2. TECNOLOGÍAS DE SECUENCIACIÓN</h5>
-                <div class="accordion-item-content">
+                
+                <button class="accordion">2. TECNOLOGÍAS DE SECUENCIACIÓN</button>
+                <div class="panel">
                     <p>¿Cómo funcionan?</p>
                     <p>Similitudes y Diferencias</p>
                     <p>Rendimiento y alcances</p>
                 </div>
-                </section>
-                <section class="accordion-item">
-                <h5>3. BASES DE PLANEACIÓN</h5>
-                <div class="accordion-item-content">
+                
+                <button class="accordion">3. BASES DE PLANEACIÓN</button>
+                <div class="panel">
                     <p>Planteamiento de objetivos</p>
                     <p>Abordajes generales de planeación</p>
                     <p>Control del costo, tiempo y esfuerzo</p>
                 </div>
-                </section>
-                <section class="accordion-item">
-                <h5>4. ENSAMBLE DE GENOMAS</h5>
-                <div class="accordion-item-content">
+                
+                <button class="accordion">4. ENSAMBLE DE GENOMAS</button>
+                <div class="panel">
                     <p>Profundidad de secuenciación</p>
                     <p>Flujo de análisis</p>
                     <p>Contigs y ensambles cerrados</p>
                     <p>Planes en varios escenarios</p>
                 </div>
-                </section>
-                <section class="accordion-item">
-                <h5>5. BÚSQUEDA DE VARIANTES</h5>
-                <div class="accordion-item-content">
+                
+                <button class="accordion">5. BÚSQUEDA DE VARIANTES</button>
+                <div class="panel">
                     <p>Variantes de ADN</p>
                     <p>Flujo de análisis</p>
                     <p>Búsqueda a nivel genómico o dirigida</p>
                     <p>Cobertura y uniformidad de cobertura</p>
                     <p>Planes en varios escenarios</p>
                 </div>
-                </section>
             </div>
 
-            <div class="accordion">
-                <section class="accordion-item">
-                <h5>6. EXPERIMENTOS CUANTITATIVOS</h5>
-                <div class="accordion-item-content">
+            <div>
+                
+                <button class="accordion">6. EXPERIMENTOS CUANTITATIVOS</button>
+                <div class="panel">
                     <p>Tamaño del efecto, dispersión y fuerza estadística</p>
                     <p>Especies predominantes y minoritarias</p>
                     <p>Replicación</p>
@@ -162,33 +156,29 @@
                     <p>Lotes de procesamiento</p>
                     <p>Integración de otros datos experimentales</p>
                 </div>
-                </section>
-                <section class="accordion-item">
-                <h5>7. TRANSCRIPTÓMICA</h5>
-                <div class="accordion-item-content">
+                
+                <button class="accordion">7. TRANSCRIPTÓMICA</button>
+                <div class="panel">
                     <p>Flujo de análisis</p>
                     <p>Planes en varios escenarios</p>
                     <p>Organismos sin un genoma de referenccia</p>
                     <p>Comprobación por RT-PCR</p>
                 </div>
-                </section>
-                <section class="accordion-item">
-                <h5>8. METAGENÓMICA POR MARCADORES Y COMPLETA</h5>
-                <div class="accordion-item-content">
+                
+                <button class="accordion">8. METAGENÓMICA POR MARCADORES Y COMPLETA</button>
+                <div class="panel">
                     <p>Distintos marcadores</p>
                     <p>Flujos de análisis de datos</p>
                     <p>Diversidad en los nichos ecológicos</p>
                 </div>
-                </section>
-                <section class="accordion-item">
-                <h5>9. OTRAS CONSIDERACIONES</h5>
-                <div class="accordion-item-content">
+                
+                <button class="accordion">9. OTRAS CONSIDERACIONES</button>
+                <div class="panel">
                     <p>Extracción y calidad del ADN y ARN</p>
                     <p>Tipos de expertise bioinformático</p>
                     <p>Recepción de datos</p>
                     <p>Recursos de cómputo</p>
                 </div>
-                </section>
             </div>
         </div>
         </section>
@@ -237,29 +227,20 @@
 
     <script src="js/Variables.js"></script> 
     <script>
-        var acc = document.getElementsByClassName("Tema");
+        var acc = document.getElementsByClassName("accordion");
         var i;
-        //for (i = 0; i < acc.length; i++) {
-          //acc[i].addEventListener("mousehover", function() {
-            //this.classList.toggle("active");
-            //var panel = this.nextElementSibling;
-            //if (panel.style.maxHeight) {
-            //  panel.style.maxHeight = null;
-            //} else {
-            //  panel.style.maxHeight = panel.scrollHeight + "px";
-            //} 
-          //});
-        //}
-        //for (i = 0; i < acc.length; i++) {
         
-        //acc[i].addEventListener("mouseover", func);
-        //acc[i].addEventListener("mouseout", func1);
-
-        //var panel = acc[i].nextElementSibling
-        //function func(){panel.style.maxHeight = panel.scrollHeight + "px";}
-        //function func1(){panel.style.maxHeight = null}
-        //}
-
-    </script>
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+     </script>
 </body>    
 </html>

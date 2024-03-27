@@ -26,14 +26,6 @@ h4{
     color:blue;
     
 }
-h5{
-    font-size:2.5rem; font-weight: 200;
-    text-align: left;
-    background-color: rgb(255, 179, 0);
-    padding:2rem 1rem;
-    border-radius: 0 0 2rem 0;
-
-}
 
 /***CONTENT SECTIONS*/
 .Main_Promo2{
@@ -175,30 +167,25 @@ h5{
     align-items: start;
 }
 
-.accordion:hover .accordion-item:hover .accordion-item-content,
-.accordion .accordion-item--default .accordion-item-content {
-    height: auto;
+.accordion{
+    font-size:2.5rem; font-weight: 200;
+    text-align: left;
+    background-color: rgb(255, 179, 0);
+    padding:2rem 1rem;
+    border-radius: 0 0 2rem 0;
+    cursor: pointer;
+    width:100%;
+    border: 2px solid #ffffff;
 }
-
-.accordion-item-content,
-.accordion:hover .accordion-item-content {
-    height: 0;
+.active, .accordion:hover {
+    background-color: #ccc; 
+  }  
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: rgb(255, 244, 224);
     overflow: hidden;
-    transition: height .25s;
-}
-
-/* Aesthetic */
-
-.accordion {
-    padding: 0; margin: 0; width: 100%;
-}
-
-.accordion .accordion-item {
-  background-color: rgb(219, 219, 219);
-  border: 2px solid #ffffff;
-  padding: 0;
-  border-radius: 0 0 2rem 0;
-}
+  }
 
 @media only screen and (max-width: 800px) {
     #Present, #Instruct, #Descrip, #Inscripcion, #Temario>div, #Main_data>div{
