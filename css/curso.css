@@ -159,6 +159,7 @@ h4{
 #Inscripcion > div {
     border: 3px solid;
     border-image: linear-gradient(135deg, transparent 50%,  blue) 1;
+    padding-bottom:3rem;
 }
 .bold{
     font-weight: 600;
