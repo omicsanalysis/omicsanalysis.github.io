@@ -17,8 +17,12 @@ h3{
     font-size:3rem;
     padding:1rem 3rem;
 }
+
 h1, h2, h3{ text-align: right}
-h2,h3{ background: linear-gradient(to right, transparent, rgb(145, 22, 147)); }
+.ngs_heads{ background: linear-gradient(to right, transparent, rgb(145, 22, 147)); }
+.metag_heads{background: linear-gradient(to right, transparent, rgb(22, 87, 147));}
+.bact_heads{background: linear-gradient(to right, transparent, rgb(62, 22, 147));}
+
 h4{
     font-size:3rem; font-weight: 200;
     text-align: center;
@@ -36,10 +40,23 @@ h4{
     align-items: center;
     text-align: center;
     font-weight: 500;
-    background: linear-gradient(-45deg, #b669dd, #3931ad);
+
+}
+.ngs_prom{background: linear-gradient(-45deg, #b669dd, #3931ad);
     background-size: 300vw;
     animation: gradient 4s ease forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;}
+.metag_prom{background: linear-gradient(-45deg, #0d318b, #446cee);
+    background-size: 300vw;
+    animation: gradient 4s ease forwards;
+    animation-iteration-count: infinite;}
+.metag_prom h2{
+    font-size: 5rem;
+    padding: 3rem 3rem 0rem;
+}
+.metag_prom h3{
+    font-size: 3rem;
+    padding: 0rem 3rem 3rem;
 }
 @keyframes gradient {
     0% {
@@ -60,8 +77,11 @@ h4{
     letter-spacing: 0.3rem;
 }
 #Opening{
-    background-color: #362f8e;
     background-image:url("../img/DNA1.png");
+}
+#Opening2{
+    background-image:url("../img/metag3.jpg");
+    background-position: 30% 50%;
 }
 #Present{
     display:grid;
@@ -210,6 +230,35 @@ h4{
     background-color: #efeeee;
     overflow: hidden;
   }
+
+#Courselist {
+    display: flex;
+    flex-direction: column;
+}
+
+#Courselist div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #100c77 0%, #2a46b9 20%);
+    margin: 1rem 5rem;
+    border-radius: 1rem;
+    color:white;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+#Courselist h4{
+    font-size: 2rem;
+    margin: 0.5rem;
+    font-weight: 700;
+    color:white;
+}
+#Courselist p{
+    margin: 0.5rem;
+    color:white;
+}
+#Courselist div:hover{
+    box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.6);
+}
 
 @media only screen and (max-width: 800px) {
     #Present, #Instruct, #Descrip, #Inscripcion, #Temario>div, #Main_data>div{
