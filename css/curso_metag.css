@@ -1,0 +1,39 @@
+/***HERO IMAGE*/
+#h1{
+
+}
+#Opening{
+    background-image:url("../img/metag4.jpg");
+    background-size:contain;
+    background-position: 100% 100%;
+}
+
+.Main_Promo{
+    background: linear-gradient(60deg, #442ab9, rgb(252, 151, 63));
+    background-size: 300vw;
+    animation: gradient 6s ease forwards;
+    animation-iteration-count: infinite;
+}
+#Present{
+    background: linear-gradient(45deg, #0c0a5b 0%, #442ab9 40%,transparent 80%);
+}
+/*Title subtitle color*/
+h2, h3{background: linear-gradient(to right, transparent, #201693);}
+
+/***DATE HOUR SECTION*/
+#Main_data{
+
+    background-color: rgb(252, 151, 63,90%);
+   /* background-color: #dc49ead4;*/
+}
+.accordion{
+    background-color:  rgba(255, 136, 0, 0.807);
+}
+
+@media only screen and (max-width: 800px) {
+    #Opening{
+        background-image:url("../img/metag4rotate.jpeg");
+        background-size: 100%;
+        background-position: 0% 0%;
+    }   
+}

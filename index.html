@@ -6,8 +6,9 @@
     <title>OMICs Analysis</title>
     <meta name="description" content="Análisis de datos de NGS para proyectos de Metagenómica y Transcriptómica">
     <meta name="author" content="OMICs Analysis">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,9 +39,9 @@
     <main>
 
 
-        <section class="Main_Promo">
+        <section class="Main_Promo horizflex">
             <p id="p_consult_promo">ASESORÍA GRATIS PARA LA PLANEACIÓN DE EXPERIMENTOS DE NGS </p>
-            <a href="#Contacto"><div id="Agende">Agende una Cita</div></a>
+            <a href="#Contacto"><div id="Agende" class="vertiflex">Agende una Cita</div></a>
         </section>
         <section id="Banner">
             <div id="Banner_div"></div>
@@ -51,17 +52,17 @@
             <h1 id="h_analisis"></h1>
             <p id="p_anali_1"></p>
             <div id="Analisis_caract">
-                <div class="caract">
+                <div class="caract vertiflex">
                     <div><h3 id="h_caract_1"></h3></div>
                     <img id="src_atencion" class="icon" src="img/atencion.png">
                     <p id="p_caract_1"></p>
                 </div>
-                <div class="caract">
+                <div class="caract vertiflex">
                     <div><h3 id="h_caract_2"></h3></div>
                     <img id="src_velocidad" class="icon" src="img/velocidad.png">
                     <p id="p_caract_2"></p>
                 </div>
-                <div class="caract">
+                <div class="caract vertiflex">
                     <div><h3 id="h_caract_3"></h3></div>
                     <img id="src_reportes" class="icon" src="img/reportes.png">
                     <p id="p_caract_3"></p>
@@ -71,14 +72,14 @@
             <section id="Analisis_Aplicaciones">
                 <article class="Aplicacion">
                     <h2 id="h_metag_1"></h2>
-                    <div class="horizontal_flex">
+                    <div class="horizflex">
                         <img src="img/metagenomica.png">
                         <p id="p_metag_1"></p>
                     </div>
                 </article>
                 <article class="Aplicacion">
                     <h2 id="h_trans_1"></h2>
-                    <div class="horizontal_flex">
+                    <div class="horizflex">
                         <p id="p_trans_1"></p>
                         <img src="img/transcriptomica.png">
                     </div>
@@ -89,7 +90,7 @@
 
         <section id="Consultoria">
             <h1 id="h_consult"></h1>
-            <div class="horizontal_flex">
+            <div class="horizflex">
                 <img class="circle_image" src="img/Consultoria_1.jpg">
                 <div>
                     <p id="p_consult_1"></p>
@@ -100,7 +101,7 @@
         </section>
 
 
-        <section id="Quienes">
+        <section id="Quienes" class="vertiflex">
             <div>
                 <h1 id="h_quienes"></h1>
                 <p id="p_quienes_1"></p>
@@ -114,7 +115,7 @@
         </section>
 
 
-        <section class="Contacto">
+        <section id="Contacto" class="Contacto">
             <h1 id="h_contacto"></h1>
             <p id="p_contacto_1"></p>
             <p id="p_contacto_2"></p>
