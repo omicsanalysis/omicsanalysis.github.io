@@ -1,11 +1,8 @@
 /***HERO IMAGE*/
-#h1{
-
-}
-#Opening{
-    background-image:url("../img/metag4.jpg");
-    background-size:contain;
-    background-position: 100% 100%;
+#Present{
+    background-image:url("../img/Hero_metag.jpeg");
+    background-position: 100% 0%;
+    background-size:cover;
 }
 
 .Main_Promo{
@@ -14,26 +11,22 @@
     animation: gradient 6s ease forwards;
     animation-iteration-count: infinite;
 }
-#Present{
-    background: linear-gradient(45deg, #0c0a5b 0%, #442ab9 40%,transparent 80%);
-}
-/*Title subtitle color*/
-h2, h3{background: linear-gradient(to right, transparent, #201693);}
 
 /***DATE HOUR SECTION*/
 #Main_data{
-
-    background-color: rgb(252, 151, 63,90%);
-   /* background-color: #dc49ead4;*/
+    background-color: rgb(252, 151, 63);
 }
 .accordion{
     background-color:  rgba(255, 136, 0, 0.807);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     #Opening{
-        background-image:url("../img/metag4rotate.jpeg");
-        background-size: 100%;
-        background-position: 0% 0%;
-    }   
+        background-image:url("../img/Hero_metag2.jpeg");
+        background-position: 100% 120%;
+        background-size:cover;
+    }
+    h1, h2, h3{
+        background: linear-gradient(39deg, transparent, rgba(41, 10, 111, 0.9)40%)
+    }
 }

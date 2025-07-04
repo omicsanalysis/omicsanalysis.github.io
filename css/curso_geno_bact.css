@@ -1,2 +1,36 @@
-h2, h3{background: linear-gradient(to right, transparent, rgb(62, 22, 147));}
 
+.Main_Promo{
+    padding: 0 1rem;
+    color:white;
+    font-weight: 500;
+    background: linear-gradient(-45deg, #69cadd, #3931ad);
+    background-size: 300vw;
+    animation: gradient 4s ease forwards;
+    animation-iteration-count: infinite;
+}
+#Present{
+    background-image:url("../img/Hero_bact2.jpeg");
+    background-position: 100% 100%;
+}
+#Main_data{
+    background-color: rgb(47, 228, 134);
+}
+.accordion{
+    background-color: rgb(68, 195, 224);
+}
+@media only screen and (max-width: 1000px) {
+    #Present{
+        background-image:url("../img/hero_bact_small.png");
+        background-position: center;
+        background-size:130%;
+    }
+    #Present>div{
+        background:radial-gradient(
+        rgba(41, 10, 111, 0.9)60%,transparent);
+        padding:2rem 0rem;
+    }
+    h1,h2,h3{
+        margin:0;
+        padding:0.5rem 1rem;
+    }
+}

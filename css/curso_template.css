@@ -1,6 +1,6 @@
 /*Big CURSO word*/
 h1{
-    font-size: 10rem; font-weight: 100;
+    font-size: 8rem; font-weight: 100;
     color:white;
     padding:0 2rem;
 }
@@ -11,13 +11,10 @@ h2{
 }
 /*Course subtitle*/
 h3{
-    font-size:3rem;
+    font-size:3.5rem;
     padding:1rem 3rem;
 }
 h1, h2, h3{ text-align: right}
-
-h2, h3{background: linear-gradient(to right, transparent, rgb(53, 18, 127));}
-
 
 /*COSTO PAGO INSCRIPCION etc*/
 
@@ -58,21 +55,16 @@ h4{
     letter-spacing: 0.3rem;
 }
 
-/***HERO IMAGE*/
-#Opening{
-    background-image:url("../img/DNA1.png");
-    background-position: center;
-}
 /***COURSE + TITLE-SUBTITLE SECTION*/
 #Present{
     display:grid;
-    grid-template-columns:1fr 2fr;
+    grid-template-columns:2fr 1fr;
     background-size: cover;
     background-position: center;
     min-height: 35rem;
     color:white;
-    background: linear-gradient(45deg, #100c77 0%, #2a46b9 40%,transparent 70%);
-
+    background-image:url("../img/DNA1.png");
+    background-position: center;
 }
 /***DATE HOUR SECTION*/
 #Main_data{
@@ -195,7 +187,7 @@ h4{
     overflow: hidden;
   }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     #Present, #Instruct, #Descrip, #Inscripcion, #Temario>div{
         display:flex;
         flex-direction: column;
@@ -213,16 +205,16 @@ h4{
         background: linear-gradient(210deg, #100c77 0%, #2a46b9 20%,transparent 50%);
     }
     h1, h2, h3 { text-align: center;}
-    #Present h1{
-        font-size: 7rem;
+    h1{
+        font-size: 6rem;
         margin:2rem; padding:0;
     }
-    #Present h2{
+    h2{
         font-size: 3rem;
         margin:0; padding:1rem 0rem;
     }
-    #Present h3{
-        font-size: 2rem;
+    h3{
+        font-size: 2.5rem;
         margin:0; padding:2rem 0rem;
     }
     #Main_data >div{
