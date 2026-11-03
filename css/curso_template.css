@@ -58,7 +58,7 @@ h4{
 /***COURSE + TITLE-SUBTITLE SECTION*/
 #Present{
     display:grid;
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:1fr 2fr;
     background-size: cover;
     background-position: center;
     min-height: 35rem;
